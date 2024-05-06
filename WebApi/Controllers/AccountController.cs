@@ -33,8 +33,8 @@ namespace WebApi.Controllers
             return Ok(await _accountService.RegisterAsync(request));
         }
 
-        [HttpGet("usersList")]
-        public async Task<IActionResult> GetAllUsers(RegisterRequest request)
+        [HttpGet("getusers")]
+        public async Task<IActionResult> GetUsers()
         {
             return Ok(await _accountService.UserList());
         }

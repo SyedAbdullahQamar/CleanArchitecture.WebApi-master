@@ -13,6 +13,6 @@ namespace Application.Interfaces
         Task<Response<AuthenticationResponse>> AuthenticateAsync(AuthenticationRequest request, string ipAddress);
         Task<Response<string>> RegisterAsync(RegisterRequest request);
 
-        Task<Response<UserList>> UserList();
+        Task<Response<List<UserList>>> UserList();
     }
 }

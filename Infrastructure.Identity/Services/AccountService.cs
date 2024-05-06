@@ -12,12 +12,11 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
-using System.Security.Cryptography;
 using System.Text;
 using Application.Enums;
 using System.Threading.Tasks;
-using Newtonsoft.Json.Linq;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 
 namespace Infrastructure.Identity.Services
 {
@@ -27,15 +26,18 @@ namespace Infrastructure.Identity.Services
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly JWTSettings _jwtSettings;
-        public AccountService(UserManager<ApplicationUser> userManager, 
-            RoleManager<IdentityRole> roleManager, 
-            IOptions<JWTSettings> jwtSettings, 
-            SignInManager<ApplicationUser> signInManager)
+        private readonly IMapper _mapper;
+        public AccountService(UserManager<ApplicationUser> userManager,
+            RoleManager<IdentityRole> roleManager,
+            IOptions<JWTSettings> jwtSettings,
+            SignInManager<ApplicationUser> signInManager,
+            IMapper mapper)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _jwtSettings = jwtSettings.Value;
             _signInManager = signInManager;
+            _mapper = mapper;
         }
 
         public async Task<Response<AuthenticationResponse>> AuthenticateAsync(AuthenticationRequest request, string ipAddress)
@@ -122,10 +124,28 @@ namespace Infrastructure.Identity.Services
             }
         }
 
-        public async Task<Response<UserList>> UserList()
+        public async Task<Response<List<UserList>>> UserList()
         {
             var users = await _userManager.Users.ToListAsync();
-            return null;
+
+            List<UserList> result = new List<UserList>();
+
+            foreach (var user in users)
+            {
+                UserList model = new UserList()
+                {
+                    FirstName = user.FirstName,
+                    LastName = user.LastName,
+                    UserName = user.UserName,
+                    Email = user.Email,
+                    PhoneNumber = user.PhoneNumber,
+                    DateOfBirth = (DateTime)user.DateOfBirth,
+                };
+
+                result.Add(model);
+            }
+            
+            return new Response<List<UserList>>(result, "users");
         }
 
         private async Task<JwtSecurityToken> GenerateJWToken(ApplicationUser user)

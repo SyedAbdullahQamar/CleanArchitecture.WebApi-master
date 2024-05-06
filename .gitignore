@@ -341,3 +341,8 @@ healthchecksdb
 
 WebApi/appsettings.Development.json
 VSIXCore/
+.template.config/template.json
+.template.config/template.vstemplate
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+README.md
