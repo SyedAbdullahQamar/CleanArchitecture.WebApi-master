@@ -1,0 +1,100 @@
+2024-05-05 19:54:52.642 +05:00 [WRN] The entity type 'RefreshToken' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 19:54:52.711 +05:00 [WRN] The entity type 'ApplicationUser' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 19:54:52.711 +05:00 [WRN] The entity type 'IdentityRole' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 19:54:52.720 +05:00 [WRN] The entity type 'IdentityRoleClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 19:54:52.720 +05:00 [WRN] The entity type 'IdentityUserClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 19:54:52.720 +05:00 [WRN] The entity type 'IdentityUserLogin<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 19:54:52.720 +05:00 [WRN] The entity type 'IdentityUserRole<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 19:54:52.720 +05:00 [WRN] The entity type 'IdentityUserToken<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 19:58:13.042 +05:00 [WRN] The entity type 'RefreshToken' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 19:58:13.139 +05:00 [WRN] The entity type 'ApplicationUser' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 19:58:13.140 +05:00 [WRN] The entity type 'IdentityRole' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 19:58:13.140 +05:00 [WRN] The entity type 'IdentityRoleClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 19:58:13.140 +05:00 [WRN] The entity type 'IdentityUserClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 19:58:13.140 +05:00 [WRN] The entity type 'IdentityUserLogin<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 19:58:13.140 +05:00 [WRN] The entity type 'IdentityUserRole<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 19:58:13.140 +05:00 [WRN] The entity type 'IdentityUserToken<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:03:55.780 +05:00 [WRN] The entity type 'RefreshToken' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:03:55.872 +05:00 [WRN] The entity type 'ApplicationUser' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:03:55.872 +05:00 [WRN] The entity type 'IdentityRole' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:03:55.872 +05:00 [WRN] The entity type 'IdentityRoleClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:03:55.872 +05:00 [WRN] The entity type 'IdentityUserClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:03:55.872 +05:00 [WRN] The entity type 'IdentityUserLogin<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:03:55.873 +05:00 [WRN] The entity type 'IdentityUserRole<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:03:55.873 +05:00 [WRN] The entity type 'IdentityUserToken<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:05:28.595 +05:00 [WRN] The entity type 'RefreshToken' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:05:28.687 +05:00 [WRN] The entity type 'ApplicationUser' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:05:28.687 +05:00 [WRN] The entity type 'IdentityRole' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:05:28.687 +05:00 [WRN] The entity type 'IdentityRoleClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:05:28.687 +05:00 [WRN] The entity type 'IdentityUserClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:05:28.687 +05:00 [WRN] The entity type 'IdentityUserLogin<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:05:28.687 +05:00 [WRN] The entity type 'IdentityUserRole<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:05:28.687 +05:00 [WRN] The entity type 'IdentityUserToken<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:05:28.994 +05:00 [ERR] An error occurred using the connection to database 'main' on server 'Database\MatenseDb.db'.
+2024-05-05 20:06:41.898 +05:00 [WRN] The entity type 'RefreshToken' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:06:41.994 +05:00 [WRN] The entity type 'ApplicationUser' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:06:41.994 +05:00 [WRN] The entity type 'IdentityRole' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:06:41.994 +05:00 [WRN] The entity type 'IdentityRoleClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:06:41.994 +05:00 [WRN] The entity type 'IdentityUserClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:06:41.995 +05:00 [WRN] The entity type 'IdentityUserLogin<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:06:41.995 +05:00 [WRN] The entity type 'IdentityUserRole<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:06:41.995 +05:00 [WRN] The entity type 'IdentityUserToken<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:06:42.217 +05:00 [ERR] An error occurred using the connection to database 'main' on server 'Database\MatenseDb.db'.
+2024-05-05 20:08:01.122 +05:00 [WRN] The entity type 'RefreshToken' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:08:01.226 +05:00 [WRN] The entity type 'ApplicationUser' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:08:01.227 +05:00 [WRN] The entity type 'IdentityRole' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:08:01.227 +05:00 [WRN] The entity type 'IdentityRoleClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:08:01.227 +05:00 [WRN] The entity type 'IdentityUserClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:08:01.227 +05:00 [WRN] The entity type 'IdentityUserLogin<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:08:01.227 +05:00 [WRN] The entity type 'IdentityUserRole<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:08:01.227 +05:00 [WRN] The entity type 'IdentityUserToken<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:10:13.450 +05:00 [WRN] The entity type 'RefreshToken' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:10:13.556 +05:00 [WRN] The entity type 'ApplicationUser' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:10:13.556 +05:00 [WRN] The entity type 'IdentityRole' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:10:13.556 +05:00 [WRN] The entity type 'IdentityRoleClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:10:13.556 +05:00 [WRN] The entity type 'IdentityUserClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:10:13.556 +05:00 [WRN] The entity type 'IdentityUserLogin<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:10:13.556 +05:00 [WRN] The entity type 'IdentityUserRole<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:10:13.556 +05:00 [WRN] The entity type 'IdentityUserToken<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:10:16.339 +05:00 [WRN] Role 13a9c597-7d4d-4935-a054-ada68bc1fd79 validation failed: DuplicateRoleName.
+2024-05-05 20:10:16.352 +05:00 [WRN] Role e7ea32d9-4ab0-4119-85f0-a68654190461 validation failed: DuplicateRoleName.
+2024-05-05 20:18:11.288 +05:00 [WRN] The entity type 'RefreshToken' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:18:11.396 +05:00 [WRN] The entity type 'ApplicationUser' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:18:11.397 +05:00 [WRN] The entity type 'IdentityRole' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:18:11.397 +05:00 [WRN] The entity type 'IdentityRoleClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:18:11.397 +05:00 [WRN] The entity type 'IdentityUserClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:18:11.397 +05:00 [WRN] The entity type 'IdentityUserLogin<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:18:11.397 +05:00 [WRN] The entity type 'IdentityUserRole<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:18:11.397 +05:00 [WRN] The entity type 'IdentityUserToken<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:18:12.373 +05:00 [WRN] Role 7f0a5173-43a9-48c9-b65a-fdea0e8745cc validation failed: DuplicateRoleName.
+2024-05-05 20:18:12.382 +05:00 [WRN] Role 3b4f9850-4dad-4f07-8624-5acdc497f8a7 validation failed: DuplicateRoleName.
+2024-05-05 20:19:43.199 +05:00 [WRN] The entity type 'RefreshToken' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:19:43.306 +05:00 [WRN] The entity type 'ApplicationUser' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:19:43.306 +05:00 [WRN] The entity type 'IdentityRole' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:19:43.306 +05:00 [WRN] The entity type 'IdentityRoleClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:19:43.306 +05:00 [WRN] The entity type 'IdentityUserClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:19:43.306 +05:00 [WRN] The entity type 'IdentityUserLogin<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:19:43.306 +05:00 [WRN] The entity type 'IdentityUserRole<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:19:43.306 +05:00 [WRN] The entity type 'IdentityUserToken<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:19:44.257 +05:00 [WRN] Role f50fb429-eb85-44e7-880b-67020f41e584 validation failed: DuplicateRoleName.
+2024-05-05 20:19:44.266 +05:00 [WRN] Role 6cbca75c-cde5-444a-b8e9-68740e19a8a7 validation failed: DuplicateRoleName.
+2024-05-05 20:30:29.302 +05:00 [WRN] The entity type 'RefreshToken' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:30:29.394 +05:00 [WRN] The entity type 'ApplicationUser' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:30:29.394 +05:00 [WRN] The entity type 'IdentityRole' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:30:29.394 +05:00 [WRN] The entity type 'IdentityRoleClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:30:29.394 +05:00 [WRN] The entity type 'IdentityUserClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:30:29.394 +05:00 [WRN] The entity type 'IdentityUserLogin<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:30:29.394 +05:00 [WRN] The entity type 'IdentityUserRole<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:30:29.394 +05:00 [WRN] The entity type 'IdentityUserToken<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:30:30.304 +05:00 [WRN] Role 1c36c2e4-9c1b-490c-90d4-fe3d42c845a2 validation failed: DuplicateRoleName.
+2024-05-05 20:30:30.313 +05:00 [WRN] Role bb250d46-4df1-4500-974d-e0644859ac3c validation failed: DuplicateRoleName.
+2024-05-05 20:34:16.077 +05:00 [WRN] The entity type 'RefreshToken' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:34:16.177 +05:00 [WRN] The entity type 'ApplicationUser' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:34:16.177 +05:00 [WRN] The entity type 'IdentityRole' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:34:16.177 +05:00 [WRN] The entity type 'IdentityRoleClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:34:16.177 +05:00 [WRN] The entity type 'IdentityUserClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:34:16.177 +05:00 [WRN] The entity type 'IdentityUserLogin<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:34:16.177 +05:00 [WRN] The entity type 'IdentityUserRole<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:34:16.177 +05:00 [WRN] The entity type 'IdentityUserToken<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-05 20:34:17.023 +05:00 [WRN] Role ae1b9f78-564a-470f-b190-bd1599b95b38 validation failed: DuplicateRoleName.
+2024-05-05 20:34:17.032 +05:00 [WRN] Role 68725887-0e73-4c70-ac58-57efe7d8376b validation failed: DuplicateRoleName.
