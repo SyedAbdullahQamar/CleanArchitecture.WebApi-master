@@ -88,3 +88,12 @@
 2024-05-06 15:05:45.440 +05:00 [WRN] The entity type 'IdentityUserToken<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
 2024-05-06 15:05:46.116 +05:00 [WRN] Role 6fecec07-5f09-4c91-b9bd-0550529608be validation failed: DuplicateRoleName.
 2024-05-06 15:05:46.123 +05:00 [WRN] Role 269ca2a1-13a7-46b5-bfd3-44bbe6c76236 validation failed: DuplicateRoleName.
+2024-05-06 15:32:40.175 +05:00 [WRN] The entity type 'ApplicationUser' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 15:32:40.250 +05:00 [WRN] The entity type 'IdentityRole' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 15:32:40.250 +05:00 [WRN] The entity type 'IdentityRoleClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 15:32:40.250 +05:00 [WRN] The entity type 'IdentityUserClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 15:32:40.250 +05:00 [WRN] The entity type 'IdentityUserLogin<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 15:32:40.250 +05:00 [WRN] The entity type 'IdentityUserRole<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 15:32:40.250 +05:00 [WRN] The entity type 'IdentityUserToken<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 15:32:40.857 +05:00 [WRN] Role 72225447-81d7-45c3-b434-fe69e4845dce validation failed: DuplicateRoleName.
+2024-05-06 15:32:40.863 +05:00 [WRN] Role 1a8a2b90-5e4d-42d7-9dfc-ce57ff10f788 validation failed: DuplicateRoleName.

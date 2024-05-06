@@ -17,6 +17,7 @@ using Application.Enums;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using AutoMapper;
+using MediatR;
 
 namespace Infrastructure.Identity.Services
 {
@@ -134,6 +135,7 @@ namespace Infrastructure.Identity.Services
             {
                 UserList model = new UserList()
                 {
+                    UserId = user.Id,
                     FirstName = user.FirstName,
                     LastName = user.LastName,
                     UserName = user.UserName,
@@ -146,6 +148,37 @@ namespace Infrastructure.Identity.Services
             }
             
             return new Response<List<UserList>>(result, "users");
+        }
+
+        public async Task<Response<string>> UpdateUser(string userId, UpdateUser model)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            
+            if (model != null)
+            {
+                user.FirstName = model.FirstName;
+                user.LastName = model.LastName;
+                user.Email = model.Email;
+                user.PhoneNumber = model.PhoneNumber;
+                user.DateOfBirth = (DateTime)model.DateOfBirth;
+                user.EmailConfirmed = true;
+
+                var result = await _userManager.UpdateAsync(user);
+
+                if (result.Succeeded)
+                {
+                    return new Response<string>(data: null, "User updated successfully");
+                }
+                else
+                {
+                    throw new ApiException($"{result.Errors}");
+                }
+                    
+            }
+            else
+            {
+                throw new ApiException($"User not found.");
+            }
         }
 
         private async Task<JwtSecurityToken> GenerateJWToken(ApplicationUser user)

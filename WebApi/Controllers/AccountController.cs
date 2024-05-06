@@ -39,6 +39,12 @@ namespace WebApi.Controllers
             return Ok(await _accountService.UserList());
         }
 
+        [HttpPut("updateuser")]
+        public async Task<IActionResult> UpdateUser(string Id, UpdateUser model)
+        {
+            return Ok(await _accountService.UpdateUser(Id, model));
+        }
+
         private string GenerateIPAddress()
         {
             if (Request.Headers.ContainsKey("X-Forwarded-For"))
