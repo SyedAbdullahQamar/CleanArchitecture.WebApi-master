@@ -46,4 +46,10 @@
     <Folder Include="Models\Response\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Logs\Meatensalog20240506.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

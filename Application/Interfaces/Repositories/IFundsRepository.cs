@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Application.Interfaces.Repositories
 {
-    public interface IProductRepositoryAsync : IGenericRepositoryAsync<Product>
+    public interface IFundsRepository : IGenericRepositoryAsync<UserAccount>
     {
-        Task<bool> IsUniqueBarcodeAsync(string barcode);
+        Task<UserAccount> GetByUserIdAsync(string senderId);
     }
 }

@@ -12,6 +12,7 @@ namespace Application.Interfaces
     {
         Task<Response<AuthenticationResponse>> AuthenticateAsync(AuthenticationRequest request, string ipAddress);
         Task<Response<string>> RegisterAsync(RegisterRequest request);
+        Task<UserList> GetUserById(string userId);
         Task<Response<List<UserList>>> UserList();
         Task<Response<string>> UpdateUser(string userId, UpdateUser model);
         Task<Response<string>> DeleteUser(string userId);

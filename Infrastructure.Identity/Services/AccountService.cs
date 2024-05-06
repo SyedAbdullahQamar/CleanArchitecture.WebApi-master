@@ -27,18 +27,15 @@ namespace Infrastructure.Identity.Services
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly JWTSettings _jwtSettings;
-        private readonly IMapper _mapper;
         public AccountService(UserManager<ApplicationUser> userManager,
             RoleManager<IdentityRole> roleManager,
             IOptions<JWTSettings> jwtSettings,
-            SignInManager<ApplicationUser> signInManager,
-            IMapper mapper)
+            SignInManager<ApplicationUser> signInManager)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _jwtSettings = jwtSettings.Value;
             _signInManager = signInManager;
-            _mapper = mapper;
         }
 
         public async Task<Response<AuthenticationResponse>> AuthenticateAsync(AuthenticationRequest request, string ipAddress)
@@ -85,8 +82,6 @@ namespace Infrastructure.Identity.Services
                 throw new ApiException($"Username '{request.UserName}' is already taken.");
             }
 
-            
-
             var user = new ApplicationUser
             {
                 Email = request.Email,
@@ -123,6 +118,27 @@ namespace Infrastructure.Identity.Services
             {
                 throw new ApiException($"Email {request.Email } is already registered.");
             }
+        }
+
+        public async Task<UserList> GetUserById(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            
+            if(user == null)
+            {
+                return null;
+            }
+
+            return new UserList()
+            {
+                UserId = user.Id,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                UserName = user.UserName,
+                Email = user.Email,
+                PhoneNumber = user.PhoneNumber,
+                DateOfBirth = (DateTime)user.DateOfBirth,
+            };
         }
 
         public async Task<Response<List<UserList>>> UserList()

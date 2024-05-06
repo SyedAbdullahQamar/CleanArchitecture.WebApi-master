@@ -1,10 +1,6 @@
-﻿using Application.Features.Products.Commands.CreateProduct;
-using Application.Features.Products.Queries.GetAllProducts;
+﻿using Application.Features.Funds.Commands.Create;
 using AutoMapper;
 using Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Application.Mappings
 {
@@ -12,9 +8,7 @@ namespace Application.Mappings
     {
         public GeneralProfile()
         {
-            CreateMap<Product, GetAllProductsViewModel>().ReverseMap();
-            CreateMap<CreateProductCommand, Product>();
-            CreateMap<GetAllProductsQuery, GetAllProductsParameter>();
+            CreateMap<CreateFunds, UserAccount>().ReverseMap();
         }
     }
 }

@@ -22,7 +22,7 @@ namespace Infrastructure.Persistence
 
             #region Repositories
             services.AddTransient(typeof(IGenericRepositoryAsync<>), typeof(GenericRepositoryAsync<>));
-            services.AddTransient<IProductRepositoryAsync, ProductRepositoryAsync>();
+            services.AddTransient<IFundsRepository, FundsRepository>();
             #endregion
         }
     }

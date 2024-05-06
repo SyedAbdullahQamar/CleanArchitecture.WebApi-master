@@ -7,6 +7,7 @@ using Application.Interfaces;
 using Application.Wrappers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using WebApi.Middlewares;
 
 namespace WebApi.Controllers
 {
@@ -25,30 +26,6 @@ namespace WebApi.Controllers
         {
             var response = await _accountService.AuthenticateAsync(request, GenerateIPAddress());
             return Ok(response);
-        }
-
-        [HttpPost("register")]
-        public async Task<IActionResult> RegisterAsync(RegisterRequest request)
-        {
-            return Ok(await _accountService.RegisterAsync(request));
-        }
-
-        [HttpGet("getusers")]
-        public async Task<IActionResult> GetUsers()
-        {
-            return Ok(await _accountService.UserList());
-        }
-
-        [HttpPut("updateuser")]
-        public async Task<IActionResult> UpdateUser(string Id, UpdateUser model)
-        {
-            return Ok(await _accountService.UpdateUser(Id, model));
-        }
-
-        [HttpDelete("delete")]
-        public async Task<IActionResult> DeleteUser(string Id)
-        {
-            return Ok(await _accountService.DeleteUser(Id));
         }
 
         private string GenerateIPAddress()

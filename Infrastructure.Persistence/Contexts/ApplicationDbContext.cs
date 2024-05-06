@@ -23,7 +23,7 @@ namespace Infrastructure.Persistence.Contexts
             _dateTime = dateTime;
             _authenticatedUser = authenticatedUser;
         }
-        public DbSet<Product> Products { get; set; }
+        public DbSet<UserAccount> UserAccounts { get; set; }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {
@@ -32,11 +32,11 @@ namespace Infrastructure.Persistence.Contexts
                 switch (entry.State)
                 {
                     case EntityState.Added:
-                        entry.Entity.Created = _dateTime.NowUtc;
+                        entry.Entity.CreatedOn = _dateTime.NowUtc;
                         entry.Entity.CreatedBy = string.IsNullOrEmpty(_authenticatedUser.UserId) ? Guid.Empty.ToString() : _authenticatedUser.UserId;
                         break;
                     case EntityState.Modified:
-                        entry.Entity.LastModified = _dateTime.NowUtc;
+                        entry.Entity.LastModifiedOn = _dateTime.NowUtc;
                         entry.Entity.LastModifiedBy = _authenticatedUser.UserId;
                         break;
                 }
@@ -50,7 +50,7 @@ namespace Infrastructure.Persistence.Contexts
             .SelectMany(t => t.GetProperties())
             .Where(p => p.ClrType == typeof(decimal) || p.ClrType == typeof(decimal?)))
             {
-                property.SetColumnType("decimal(18,6)");
+                property.SetColumnType("decimal(18,3)");
             }
             base.OnModelCreating(builder);
         }

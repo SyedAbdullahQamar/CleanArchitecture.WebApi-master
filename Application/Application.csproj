@@ -19,5 +19,10 @@
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\Funds\Commands\Delete\" />
+    <Folder Include="Features\Funds\Queries\GetUserAccounts\" />
+    <Folder Include="Features\Funds\Queries\GetUserAccountsById\" />
+  </ItemGroup>
 
 </Project>

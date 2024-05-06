@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240506085434_init_001")]
+    [Migration("20240506132617_init_001")]
     partial class init_001
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -18,42 +18,39 @@ namespace Infrastructure.Persistence.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "3.1.32");
 
-            modelBuilder.Entity("Domain.Entities.Product", b =>
+            modelBuilder.Entity("Domain.Entities.UserAccount", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Barcode")
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime>("Created")
-                        .HasColumnType("TEXT");
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("decimal(18,3)");
 
                     b.Property<string>("CreatedBy")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Description")
+                    b.Property<DateTime>("CreatedOn")
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime?>("LastModified")
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("LastModifiedBy")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Name")
+                    b.Property<DateTime?>("LastModifiedOn")
                         .HasColumnType("TEXT");
 
-                    b.Property<decimal>("Rate")
-                        .HasColumnType("decimal(18,6)");
+                    b.Property<string>("UserId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("WalletAccount")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Products");
+                    b.ToTable("UserAccounts");
                 });
 #pragma warning restore 612, 618
         }
