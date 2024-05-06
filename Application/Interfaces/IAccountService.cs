@@ -14,5 +14,6 @@ namespace Application.Interfaces
         Task<Response<string>> RegisterAsync(RegisterRequest request);
         Task<Response<List<UserList>>> UserList();
         Task<Response<string>> UpdateUser(string userId, UpdateUser model);
+        Task<Response<string>> DeleteUser(string userId);
     }
 }

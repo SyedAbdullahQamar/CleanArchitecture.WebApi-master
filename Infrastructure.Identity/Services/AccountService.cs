@@ -173,7 +173,28 @@ namespace Infrastructure.Identity.Services
                 {
                     throw new ApiException($"{result.Errors}");
                 }
-                    
+            }
+            else
+            {
+                throw new ApiException($"User not found.");
+            }
+        }
+
+        public async Task<Response<string>> DeleteUser(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+
+            if(user != null)
+            {
+                var result = await _userManager.DeleteAsync(user);
+                if (result.Succeeded)
+                {
+                    return new Response<string>(data: null, "User deleted successfully");
+                }
+                else
+                {
+                    throw new ApiException($"{result.Errors}");
+                }
             }
             else
             {

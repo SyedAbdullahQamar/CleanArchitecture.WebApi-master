@@ -45,6 +45,12 @@ namespace WebApi.Controllers
             return Ok(await _accountService.UpdateUser(Id, model));
         }
 
+        [HttpDelete("delete")]
+        public async Task<IActionResult> DeleteUser(string Id)
+        {
+            return Ok(await _accountService.DeleteUser(Id));
+        }
+
         private string GenerateIPAddress()
         {
             if (Request.Headers.ContainsKey("X-Forwarded-For"))
