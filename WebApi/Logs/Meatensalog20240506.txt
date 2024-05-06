@@ -421,3 +421,110 @@ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updatin
 2024-05-06 18:51:53.138 +05:00 [WRN] The entity type 'IdentityUserToken<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
 2024-05-06 18:51:54.021 +05:00 [WRN] Role 53d452a9-f544-4391-854d-5340601bfe74 validation failed: DuplicateRoleName.
 2024-05-06 18:51:54.030 +05:00 [WRN] Role a6de1e1a-6848-47c9-a2d9-8fd6f2741f99 validation failed: DuplicateRoleName.
+2024-05-06 22:40:30.373 +05:00 [WRN] The entity type 'ApplicationUser' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:40:30.541 +05:00 [WRN] The entity type 'IdentityRole' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:40:30.541 +05:00 [WRN] The entity type 'IdentityRoleClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:40:30.541 +05:00 [WRN] The entity type 'IdentityUserClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:40:30.541 +05:00 [WRN] The entity type 'IdentityUserLogin<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:40:30.541 +05:00 [WRN] The entity type 'IdentityUserRole<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:40:30.541 +05:00 [WRN] The entity type 'IdentityUserToken<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:40:34.343 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at Infrastructure.Identity.ServiceExtensions.<>c.<AddIdentityInfrastructure>b__0_5(JwtBearerChallengeContext context) in C:\Source Code\CleanArchitecture.WebApi-master\Infrastructure.Identity\ServiceExtensions.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleChallengeAsync(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.ChallengeAsync(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-05-06 22:40:34.400 +05:00 [WRN] The response has already started, the error page middleware will not be executed.
+2024-05-06 22:40:34.497 +05:00 [ERR] Connection ID "18302628925899014175", Request ID "80000020-0009-fe00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at Infrastructure.Identity.ServiceExtensions.<>c.<AddIdentityInfrastructure>b__0_5(JwtBearerChallengeContext context) in C:\Source Code\CleanArchitecture.WebApi-master\Infrastructure.Identity\ServiceExtensions.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleChallengeAsync(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.ChallengeAsync(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2024-05-06 22:41:29.283 +05:00 [WRN] The entity type 'ApplicationUser' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:41:29.381 +05:00 [WRN] The entity type 'IdentityRole' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:41:29.382 +05:00 [WRN] The entity type 'IdentityRoleClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:41:29.382 +05:00 [WRN] The entity type 'IdentityUserClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:41:29.382 +05:00 [WRN] The entity type 'IdentityUserLogin<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:41:29.382 +05:00 [WRN] The entity type 'IdentityUserRole<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:41:29.382 +05:00 [WRN] The entity type 'IdentityUserToken<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:41:30.489 +05:00 [WRN] Role ee2af187-6c2f-48f3-8d63-6411f9addd3a validation failed: DuplicateRoleName.
+2024-05-06 22:41:30.497 +05:00 [WRN] Role c1867a65-9e78-463e-871f-e0f52d40ad57 validation failed: DuplicateRoleName.
+2024-05-06 22:42:57.752 +05:00 [WRN] The entity type 'ApplicationUser' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:42:57.841 +05:00 [WRN] The entity type 'IdentityRole' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:42:57.841 +05:00 [WRN] The entity type 'IdentityRoleClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:42:57.841 +05:00 [WRN] The entity type 'IdentityUserClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:42:57.841 +05:00 [WRN] The entity type 'IdentityUserLogin<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:42:57.841 +05:00 [WRN] The entity type 'IdentityUserRole<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:42:57.841 +05:00 [WRN] The entity type 'IdentityUserToken<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:42:58.823 +05:00 [WRN] Role 76c77c8d-7555-4471-ad34-c54d4162b9cf validation failed: DuplicateRoleName.
+2024-05-06 22:42:58.834 +05:00 [WRN] Role a430e644-6f50-4d83-b766-1a97718437c7 validation failed: DuplicateRoleName.
+2024-05-06 22:43:24.957 +05:00 [WRN] The entity type 'ApplicationUser' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:43:25.039 +05:00 [WRN] The entity type 'IdentityRole' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:43:25.039 +05:00 [WRN] The entity type 'IdentityRoleClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:43:25.039 +05:00 [WRN] The entity type 'IdentityUserClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:43:25.039 +05:00 [WRN] The entity type 'IdentityUserLogin<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:43:25.039 +05:00 [WRN] The entity type 'IdentityUserRole<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:43:25.039 +05:00 [WRN] The entity type 'IdentityUserToken<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:48:00.674 +05:00 [WRN] The entity type 'ApplicationUser' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:48:00.780 +05:00 [WRN] The entity type 'IdentityRole' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:48:00.780 +05:00 [WRN] The entity type 'IdentityRoleClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:48:00.781 +05:00 [WRN] The entity type 'IdentityUserClaim<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:48:00.781 +05:00 [WRN] The entity type 'IdentityUserLogin<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:48:00.781 +05:00 [WRN] The entity type 'IdentityUserRole<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:48:00.781 +05:00 [WRN] The entity type 'IdentityUserToken<string>' is configured to use schema 'Identity'. SQLite does not support schemas. This configuration will be ignored by the SQLite provider.
+2024-05-06 22:48:01.925 +05:00 [WRN] Role 91eb20d6-51ba-4041-beed-9ae4660635af validation failed: DuplicateRoleName.
+2024-05-06 22:48:01.937 +05:00 [WRN] Role 8cebb1d3-ee80-44dc-b018-9aaecf642768 validation failed: DuplicateRoleName.
+2024-05-06 22:49:15.110 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at Infrastructure.Identity.ServiceExtensions.<>c.<AddIdentityInfrastructure>b__0_5(JwtBearerChallengeContext context) in C:\Source Code\CleanArchitecture.WebApi-master\Infrastructure.Identity\ServiceExtensions.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleChallengeAsync(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.ChallengeAsync(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-05-06 22:49:15.126 +05:00 [WRN] The response has already started, the error page middleware will not be executed.
+2024-05-06 22:49:15.202 +05:00 [ERR] Connection ID "17942340925644603435", Request ID "80000030-0002-f900-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at Infrastructure.Identity.ServiceExtensions.<>c.<AddIdentityInfrastructure>b__0_5(JwtBearerChallengeContext context) in C:\Source Code\CleanArchitecture.WebApi-master\Infrastructure.Identity\ServiceExtensions.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleChallengeAsync(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.ChallengeAsync(AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()

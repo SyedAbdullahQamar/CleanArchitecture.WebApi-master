@@ -34,43 +34,50 @@ namespace Application.Features.Funds.Commands.Update
         {
             var senderDetail = await _repository.GetByUserIdAsync(request.SenderId);
 
-            if(senderDetail.Amount >= request.Amount)
+            if(senderDetail == null)
             {
-                var receiverDetail = await _repository.GetByUserIdAsync(request.ReceiverId);
-                
-                if(receiverDetail != null)
-                {
-                    receiverDetail.Amount = receiverDetail.Amount + request.Amount;
-                    await _repository.UpdateAsync(receiverDetail);
-                }
-                else
-                {
-                    var result = await _accountService.GetUserById(request.ReceiverId);
-
-                    if(result != null)
-                    {
-                        var userAccount = new UserAccount()
-                        {
-                            Amount = request.Amount,
-                            UserId = request.ReceiverId,
-                            WalletAccount = result.PhoneNumber
-                        };
-
-                        var funds = _mapper.Map<UserAccount>(userAccount);
-                        await _repository.AddAsync(funds);
-                    }
-                    else
-                        throw new ApiException("Receiver not found..");
-                }
-
-                senderDetail.Amount = senderDetail.Amount - request.Amount;
-                await _repository.UpdateAsync(senderDetail);
-
-                return new Response<string>(data: null, "Funds transfered successfully.");
+                throw new ApiException("Invalid sender.");
             }
             else
             {
-                throw new ApiException("Insufficient funds");
+                if (senderDetail.Amount >= request.Amount)
+                {
+                    var receiverDetail = await _repository.GetByUserIdAsync(request.ReceiverId);
+
+                    if (receiverDetail != null)
+                    {
+                        receiverDetail.Amount = receiverDetail.Amount + request.Amount;
+                        await _repository.UpdateAsync(receiverDetail);
+                    }
+                    else
+                    {
+                        var result = await _accountService.GetUserById(request.ReceiverId);
+
+                        if (result != null)
+                        {
+                            var userAccount = new UserAccount()
+                            {
+                                Amount = request.Amount,
+                                UserId = request.ReceiverId,
+                                WalletAccount = result.PhoneNumber
+                            };
+
+                            var funds = _mapper.Map<UserAccount>(userAccount);
+                            await _repository.AddAsync(funds);
+                        }
+                        else
+                            throw new ApiException("Receiver not found.");
+                    }
+
+                    senderDetail.Amount = senderDetail.Amount - request.Amount;
+                    await _repository.UpdateAsync(senderDetail);
+
+                    return new Response<string>(data: null, "Funds transfered successfully.");
+                }
+                else
+                {
+                    throw new ApiException("Insufficient funds.");
+                }
             }
         }
     }

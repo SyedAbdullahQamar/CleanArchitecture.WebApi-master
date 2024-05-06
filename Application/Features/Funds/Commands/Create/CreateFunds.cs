@@ -43,15 +43,20 @@ namespace Application.Features.Funds.Commands.Create
             {
                 var result = await _accountService.GetUserById(request.UserId);
 
-                var userAccount = new UserAccount()
+                if (result != null)
                 {
-                    Amount = request.Amount,
-                    UserId = request.UserId,
-                    WalletAccount = result.PhoneNumber
-                };
+                    var userAccount = new UserAccount()
+                    {
+                        Amount = request.Amount,
+                        UserId = request.UserId,
+                        WalletAccount = result.PhoneNumber
+                    };
 
-                var funds = _mapper.Map<UserAccount>(userAccount);
-                await _repository.AddAsync(funds);
+                    var funds = _mapper.Map<UserAccount>(userAccount);
+                    await _repository.AddAsync(funds);
+                }
+                else
+                    throw new ApiException("no user found.");                
             }
 
             return new Response<string>(data: null, "Balance added successfully.");

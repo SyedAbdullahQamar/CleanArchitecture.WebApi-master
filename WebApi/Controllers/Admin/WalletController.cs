@@ -15,7 +15,7 @@ namespace WebApi.Controllers.Admin
     public class WalletController : BaseApiController
     {
         [HttpPost]
-        public async Task<IActionResult> Balance(AccountDetails request)
+        public async Task<IActionResult> AddBalance(AccountDetails request)
         {
             var createFunds = new CreateFunds()
             {
